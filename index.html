@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="vulkantg.css">
+</head>
+<body>
+
+<div class="longhorn-window">
+    <div class="title-bar">
+        <span>Registro de Usuario</span>
+        <div class="controls">_ □ ×</div>
+    </div>
+    
+    <form class="content" id="form1">
+        <h3>Datos personales</h3>
+        
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" placeholder="Tu nombre completo">
+
+        <label for="Correo">Correo electrónico</label>
+        <input type="email" id="Correo" placeholder="ejemplo@correo.com">
+
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" id="Contraseña">
+
+        <label for="Telefono">Teléfono</label>
+        <input type="tel" id="Telefono" maxlength="14" placeholder="13 dígitos">
+
+        <h3>Datos de inscripción</h3>
+        
+        <div class="radio-group">
+            <input type="radio" id="matutino" name="turno" value="matutino">
+            <label for="matutino">Matutino</label>
+            
+            <input type="radio" id="vespertino" name="turno" value="vespertino">
+            <label for="vespertino">Vespertino</label>
+        </div>
+
+        <label for="fecha">Fecha de inscripción</label>
+        <input type="date" id="fecha">
+
+        <table border="0" style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="padding: 5px;">
+                    <button type="submit" style="width: 100%;">Enviar</button>
+                </td>
+                <td style="padding: 5px;">
+                    <select id="dias" style="width: 100%; padding: 8px; border-radius: 3px; background: #333; color: white;">
+                        <option value="">Selecciona un día</option>
+                        <option value="lunes">Lunes</option>
+                        <option value="martes">Martes</option>
+                        <option value="miercoles">Miércoles</option>
+                        <option value="jueves">Jueves</option>
+                        <option value="viernes">Viernes</option>
+                    </select>
+                </td>
+                <td style="padding: 5px;">
+                    <video width="220" height="200" controls>
+                        <source src="img/video.mp4" type="video/mp4">
+                    </video>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
